@@ -6,9 +6,9 @@ Want to avoid going through manually and finding every single missing framework,
 - AppKit (possible via lldb but not recommended)
 - AddressBook/Contacts/ContactsUI
 - CoreTelephony (`CTTelephonyNetworkInfo`)
-- CloudKit (couldn't get it working)
+- CloudKit
 - GameplayKit
-- IntentsUI (Intents seems to work)
+- IntentsUI (Intents works)
 - LocalAuthentication
 - MessageUI (`MFMailComposeViewController`)
 - Photos (causes AppKit to load)
@@ -17,7 +17,7 @@ Want to avoid going through manually and finding every single missing framework,
 
 ### Third Party
 - Firebase by Google
-- Realm (immediate crash)
+- Realm
 - SwiftEntryKit
 - WeScan
 
@@ -31,6 +31,6 @@ Want to avoid going through manually and finding every single missing framework,
 - `UIPrintInfo` (Printing)
 - `UIWebView`
 
-### Patchable (import [Workarounds.swift](Workarounds.swift))
+### Other (import [Workarounds.swift](Workarounds.swift) to fix)
 - `-[NSFont isSystemFont]` (Called by dynamic type)
 - `-[NSFont _fontAdjustedForContentSizeCategoryCompatibleWithTraitCollection:]` (Called by `UILabel` to adjust dynamic type sizing)
