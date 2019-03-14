@@ -31,6 +31,6 @@ Want to avoid going through manually and finding every single missing framework,
 - `UIPrintInfo` (Printing)
 - `UIWebView`
 
-### Other
-- `-[NSFont isSystemFont]` **(Use [Workarounds.swift](Workarounds.swift) to fix)**
-- `-[NSFont _fontAdjustedForContentSizeCategoryCompatibleWithTraitCollection:]` **(Use [Workarounds.swift](Workarounds.swift) to fix)**
+### Patchable (import [Workarounds.swift](Workarounds.swift))
+- `-[NSFont isSystemFont]` (Called by dynamic type)
+- `-[NSFont _fontAdjustedForContentSizeCategoryCompatibleWithTraitCollection:]` (Called by `UILabel` to adjust dynamic type sizing)
