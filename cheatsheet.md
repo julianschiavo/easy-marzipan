@@ -7,9 +7,11 @@ Want to avoid going through manually and finding every single missing framework,
 - AddressBook/Contacts/ContactsUI
 - CoreTelephony (`CTTelephonyNetworkInfo`)
 - CloudKit
+- EventKit
 - GameplayKit
 - IntentsUI (Intents works)
 - LocalAuthentication
+- MapKit
 - MessageUI (`MFMailComposeViewController`)
 - Photos (causes AppKit to load)
 - SafariServices (`SFSafariViewController`)
